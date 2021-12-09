@@ -1,0 +1,137 @@
+body {
+    background-color:#f1f1f1;
+}
+
+.container {
+    height: 100%;
+    /*
+    display:grid;
+    grid-gap:5px;
+    grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 120px auto 20px;
+        grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "h h h h h h h h h h h h"
+            "n n n n n n n n n n n n"
+            "n n n n n n n n n n n n"
+            ". . c c c c c c c c . ."
+            ". . c c c c c c c c . ."
+            ". . c c c c c c c c . ."
+            ". . c c c c c c c c . ."
+            ". . c c c c c c c c . ."
+            ". . c c c c c c c c . ."
+            ". . c c c c c c c c . ."*/
+}
+
+.header {
+    grid-area: h;
+    padding: 30px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+.header h1 {
+    font-size: 40px;
+  }
+.navbar {
+    grid-area: n;
+    overflow:hidden;
+    background-color: black;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a {
+    text-align: center;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd; 
+    color: black; 
+}
+.content {
+    width: 65%;
+    margin: auto;
+    margin-top: 3em;
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    font-size: 1em;
+    color:black;
+    grid-area: c;
+}
+.videos {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex:1;
+    justify-content: center;
+}
+.screens {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex:1;
+    justify-content: center;
+}
+@media all and (max-width: 1750px) {
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1em;
+    }
+    .screens {
+        flex-wrap: wrap;
+    }
+    .videos {
+        flex-wrap: wrap;
+    }
+}
+@media all and (max-width: 1400px) {
+    .content {
+    font-size: 0.9em;
+    width: 80%;
+    }
+    .screens {
+        align-items: center;
+    }
+    .videos {
+        align-items: center;
+    }   
+}
+@media all and (max-width: 1200px) {  
+    .content {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-size: 0.8em;
+    width: 85%;
+    }
+}
+@media all and (max-width: 1000px) {
+    .content {
+        width: 90%;
+    }   
+}
+@media all and (max-width: 800px) {
+    .content {
+        width: 95%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .content {
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: 0.6em;
+    }
+}
