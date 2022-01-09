@@ -66,6 +66,9 @@ body {
     color:black;
     grid-area: c;
 }
+.projectLink {
+    font-size: 1.2em;
+}
 .videos {
     max-width: 100%;
     height: auto;
