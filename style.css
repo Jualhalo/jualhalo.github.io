@@ -87,6 +87,10 @@ body {
     flex:1;
     justify-content: center;
 }
+.thumbnail {
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
 @media all and (max-width: 1750px) {
     .content {
         padding-left: 5%;
